@@ -10,16 +10,28 @@ namespace Projetuncsharp
     {
         static void Main(string[] args)
         {
-            int a = 8;
-            int b = 4;
+            int a = 8, b = 4;
 
-            string add = "Addition";
-            string sub = "Soustraction";
+            String add = "Addition";
+            String sub = "Soustraction";
 
-         
-            Console.WriteLine("L'" + add + " entre " + a + " et " + b + " vaut " + (a+b));
-            Console.WriteLine("La" + sub + " entre " + a + )
+            Addition(a, b);
+            Soustraction(a, b);
+
             Console.ReadLine();
+
+        }
+
+        static void Addition(int val1, int val2)
+        {
+            String add = "Addition";
+            Console.WriteLine("L'" + add + " entre " + val1 + " et " + val2 + " vaut " + (val1 + val2));
+
+        }
+        static void Soustraction(int val1, int val2)
+        {
+            String sub = "Soustraction";
+            Console.WriteLine("La " + sub + " entre " + val1 + " et " + val2 + " vaut " + (val1 - val2));
         }
     }
 }
